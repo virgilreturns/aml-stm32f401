@@ -23,9 +23,8 @@ static inline void AML_GPIO_Init(GPIO_TypeDef){
   
 };
 static inline GPIO_PinState AML_GPIO_Read(GPIO_TypeDef* port, uint8_t pin);{
-  return port->
 }
-static inline void AML_GPIO_Write(GPIO_TypeDef* port, uint8_t pin);
+static inline void AML_GPIO_Write(GPIO_TypeDef* port, uint8_t pin, GPIO_PinState pin_state);
 
 
 /* Sample alias definitions
