@@ -49,7 +49,7 @@ extern "C" {
 #define __NVIC_PRIO_BITS          4U       /*!< STM32F4XX uses 4 Bits for the Priority Levels */
 #define __Vendor_SysTickConfig    0U       /*!< Set to 1 if different SysTick Config is used  */
 #define __FPU_PRESENT             1U       /*!< FPU present                                   */
-
+#define __IO volatile             /*!< Defines 'read / write' permissions             */
 /**
   * @}
   */
@@ -2546,7 +2546,7 @@ typedef struct
 #define GPIO_MODER_MODE0_1               GPIO_MODER_MODER0_1
 #define GPIO_MODER_MODE1_Pos             GPIO_MODER_MODER1_Pos
 #define GPIO_MODER_MODE1_Msk             GPIO_MODER_MODER1_Msk
-#define GPIO_MODER_MODE1                 GPIO_MODER_MODER1
+#define GPIO_MODER_MODE1                GPIO_MODER_MODER1
 #define GPIO_MODER_MODE1_0               GPIO_MODER_MODER1_0
 #define GPIO_MODER_MODE1_1               GPIO_MODER_MODER1_1
 #define GPIO_MODER_MODE2_Pos             GPIO_MODER_MODER2_Pos
